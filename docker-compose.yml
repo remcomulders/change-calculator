@@ -1,0 +1,58 @@
+version: "3.8"
+
+x-defaults: &defaults
+    init: true
+    tty: true
+    networks:
+        - change_network
+
+networks:
+    change_network:
+
+services:
+    api:
+        <<: *defaults
+        container_name: change-api
+        build: ./services/api
+        ports:
+            - "8080:8080"
+        volumes:
+            - ./services/api:/app
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+        depends_on:
+            - db
+    web:
+        <<: *defaults
+        build: ./services/web
+        container_name: change-web
+        ports:
+            - "3000:3000"
+        depends_on:
+            - api
+
+    db:
+        <<: *defaults
+        image: postgres:14.7-alpine
+        container_name: change-postgres
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: change
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+
+    adminer:
+        <<: *defaults
+        image: adminer:latest
+        links:
+            - db
+        ports:
+            - "8081:8080"
+        depends_on:
+            - db
+
+volumes:
+    pgdata:
