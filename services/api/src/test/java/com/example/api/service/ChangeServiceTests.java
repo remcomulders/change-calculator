@@ -50,7 +50,6 @@ class ChangeServiceTests {
                 "GBP" // currency
         );
 
-        // Verify the result
         assertEquals(2, result.size());
         assertEquals("50 Pound Bill", result.get(0).getType());
         assertEquals(1, result.get(0).getAmount());

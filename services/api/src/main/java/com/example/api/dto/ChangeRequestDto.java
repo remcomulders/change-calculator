@@ -8,7 +8,6 @@ public class ChangeRequestDto {
     private BigDecimal transactionAmount;
     private String currency;
 
-    // Getters and setters
     public BigDecimal getTotalGiven() {
         return totalGiven;
     }
