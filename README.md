@@ -21,7 +21,10 @@ This mono repo includes the following services:
 ## Start
 
 To start the application, you need Docker with `docker-desktop` installed.
-First, install all `node_modules` running `cd services/web && npm i && cd ../..`.
+First, install all `node_modules` run:
+
+`cd services/web && npm i && cd ../..`
+
 Then run:
 
 `docker compose up --build`
