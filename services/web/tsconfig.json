@@ -19,8 +19,21 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "target": "ESNext",
+    "verbatimModuleSyntax": true,
+    "types": ["jest", "@testing-library/jest-dom"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "./*.cjs",
+    "./*.mjs",
+    "./*.js",
+    ".eslintrc.cjs",
+    ".jest/setup.ts"
+  ],
   "exclude": ["node_modules"]
 }

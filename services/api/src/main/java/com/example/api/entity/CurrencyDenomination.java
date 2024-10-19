@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "currency_denominations")
 public class CurrencyDenomination {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

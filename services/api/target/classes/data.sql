@@ -31,3 +31,17 @@ INSERT INTO currency_denominations (currency, value, name) VALUES
 ('EUR', 0.05, '5 Cent Coin'),
 ('EUR', 0.02, '2 Cent Coin'),
 ('EUR', 0.01, '1 Cent Coin');
+
+INSERT INTO currency_denominations (currency, value, name) VALUES
+('GBP', 50.00, '50 Pound Note'),
+('GBP', 20.00, '20 Pound Note'),
+('GBP', 10.00, '10 Pound Note'),
+('GBP', 5.00, '5 Pound Note'),
+('GBP', 2.00, '2 Pound Coin'),
+('GBP', 1.00, '1 Pound Coin'),
+('GBP', 0.50, '50 Pence Coin'),
+('GBP', 0.20, '20 Pence Coin'),
+('GBP', 0.10, '10 Pence Coin'),
+('GBP', 0.05, '5 Pence Coin'),
+('GBP', 0.02, '2 Pence Coin'),
+('GBP', 0.01, '1 Pence Coin');

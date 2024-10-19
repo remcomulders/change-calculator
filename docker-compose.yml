@@ -22,12 +22,15 @@ services:
             - SPRING_PROFILES_ACTIVE=prod
         depends_on:
             - db
+
     web:
         <<: *defaults
         build: ./services/web
         container_name: change-web
         ports:
             - "3000:3000"
+        environment:
+            - API_BASE_URL="http://localhost:8080"
         depends_on:
             - api
 

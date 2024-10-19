@@ -1,9 +1,11 @@
 com/example/api/repository/CurrencyDenominationRepository.class
-com/example/api/dto/ChangeResponseDto.class
-com/example/api/controller/ChangeController.class
 com/example/api/entity/CurrencyDenomination.class
 com/example/api/service/ChangeService.class
+com/example/api/config/WebConfig.class
 com/example/api/mapper/ChangeMapper.class
+com/example/api/dto/ChangeResponseDto.class
+com/example/api/controller/ChangeController.class
+com/example/api/dto/DenominationDto.class
 com/example/api/ChangeApplication.class
 com/example/api/config/DatabaseConfig.class
 com/example/api/dto/ChangeRequestDto.class

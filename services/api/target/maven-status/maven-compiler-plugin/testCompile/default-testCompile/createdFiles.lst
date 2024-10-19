@@ -1,1 +1,3 @@
-com/example/api/ChangeApplicationTests.class
+com/example/api/service/ChangeServiceTests.class
+com/example/api/mapper/ChangeMapperTests.class
+com/example/api/controller/ChangeControllerTests.class

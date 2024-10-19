@@ -1,13 +1,14 @@
 package com.example.api.dto;
 
+import com.example.api.dto.DenominationDto;
 import java.math.BigDecimal;
-import java.util.Map;
+import java.util.List;
 
 public class ChangeResponseDto {
     private BigDecimal totalChange;
-    private Map<String, Integer> denominationBreakdown;
+    private List<DenominationDto> denominationBreakdown;
+    private String currency;
 
-    // Getters and setters
     public BigDecimal getTotalChange() {
         return totalChange;
     }
@@ -16,11 +17,19 @@ public class ChangeResponseDto {
         this.totalChange = totalChange;
     }
 
-    public Map<String, Integer> getDenominationBreakdown() {
+    public List<DenominationDto> getDenominationBreakdown() {
         return denominationBreakdown;
     }
 
-    public void setDenominationBreakdown(Map<String, Integer> denominationBreakdown) {
+    public void setDenominationBreakdown(List<DenominationDto> denominationBreakdown) {
         this.denominationBreakdown = denominationBreakdown;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 }
