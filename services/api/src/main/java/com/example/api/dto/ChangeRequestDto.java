@@ -1,7 +1,6 @@
 package com.example.api.dto;
 
 import java.math.BigDecimal;
-import java.util.Map;
 
 public class ChangeRequestDto {
     private BigDecimal totalGiven;

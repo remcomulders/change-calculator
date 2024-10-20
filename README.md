@@ -31,6 +31,10 @@ Then run:
 
 This will start all applications with the PostgreSQL database, Java Spring Boot, Next.js, and Adminer in a Docker container.
 
+Navigate to:
+
+`http://localhost:3000`
+
 ## Folder structure
 
 The root of the Monorepo contains the turborepo configuration files, and the main package.json which defines the

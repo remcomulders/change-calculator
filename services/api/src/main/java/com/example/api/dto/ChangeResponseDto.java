@@ -1,6 +1,5 @@
 package com.example.api.dto;
 
-import com.example.api.dto.DenominationDto;
 import java.math.BigDecimal;
 import java.util.List;
 

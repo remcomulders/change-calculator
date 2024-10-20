@@ -1,7 +1,6 @@
 package com.example.api.controller;
 
 import com.example.api.dto.ChangeRequestDto;
-import com.example.api.dto.ChangeResponseDto;
 import com.example.api.dto.DenominationDto;
 import com.example.api.service.ChangeService;
 import org.junit.jupiter.api.BeforeEach;
